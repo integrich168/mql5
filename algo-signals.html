@@ -31,6 +31,7 @@ content="width=device-width, initial-scale=1.0">
       padding: 10px;
       margin-bottom: 10px;
       background-color: #666666;
+      position: relative;
     }
 
     .group-title {
@@ -53,6 +54,16 @@ content="width=device-width, initial-scale=1.0">
       border: 1px solid #ccc;
       padding: 10px;
       background-color: #fff;
+    }
+
+    .group::after {
+      content: "";
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
   </style>
 </head>
@@ -95,5 +106,5 @@ content="width=device-width, initial-scale=1.0">
     </div>
   </div>
 
-  </body>
+</body>
 </html>
